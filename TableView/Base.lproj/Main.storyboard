@@ -32,18 +32,19 @@
                                 <rect key="frame" x="0.0" y="74" width="375" height="529"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="123" id="bsk-bf-9Ej" customClass="CategoriCell" customModule="TableView" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="123"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CetegoriCell" rowHeight="143" id="bsk-bf-9Ej" customClass="CategoriCell" customModule="TableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bsk-bf-9Ej" id="nCJ-QU-XVa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bsk-bf-9Ej" id="nCJ-QU-XVa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NJU-RG-ldv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="122.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="NJU-RG-ldv">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="136.5"/>
+                                                    <viewLayoutGuide key="safeArea" id="sBd-V6-t3C"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-3b-eht">
-                                                    <rect key="frame" x="69.5" y="45.5" width="236" height="32"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-3b-eht">
+                                                    <rect key="frame" x="69.5" y="55.5" width="236" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="32" id="C9N-oh-lqH"/>
                                                         <constraint firstAttribute="width" constant="236" id="lix-Lr-BCq"/>
@@ -54,13 +55,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="NJU-RG-ldv" secondAttribute="bottom" id="Dav-L5-dJD"/>
-                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerX" secondItem="nCJ-QU-XVa" secondAttribute="centerX" id="OSM-QU-Q1I"/>
-                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerY" secondItem="nCJ-QU-XVa" secondAttribute="centerY" id="Sz9-ZW-mYm"/>
-                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="top" secondItem="nCJ-QU-XVa" secondAttribute="top" id="XC2-Kz-3iE"/>
-                                                <constraint firstAttribute="trailing" secondItem="NJU-RG-ldv" secondAttribute="trailing" id="clS-8m-Gna"/>
-                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="centerX" secondItem="nCJ-QU-XVa" secondAttribute="centerX" id="e0B-UA-o2a"/>
-                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="leading" secondItem="nCJ-QU-XVa" secondAttribute="leading" id="fAY-by-CmS"/>
+                                                <constraint firstAttribute="bottom" secondItem="NJU-RG-ldv" secondAttribute="bottom" constant="3" id="Osb-M4-D3W"/>
+                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="leading" secondItem="nCJ-QU-XVa" secondAttribute="leading" id="PH7-y7-G0T"/>
+                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="trailing" secondItem="nCJ-QU-XVa" secondAttribute="trailing" id="nqu-NP-F7T"/>
+                                                <constraint firstItem="NJU-RG-ldv" firstAttribute="top" secondItem="nCJ-QU-XVa" secondAttribute="top" constant="3" id="u6p-x2-NVU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -115,4 +113,7 @@
             <point key="canvasLocation" x="-222" y="-552"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="digital" width="1024" height="703"/>
+    </resources>
 </document>

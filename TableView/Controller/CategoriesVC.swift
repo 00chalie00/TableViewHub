@@ -8,16 +8,45 @@
 
 import UIKit
 
-class CategoriesVC: UIViewController {
+class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    
 
     @IBOutlet weak var categoriTable: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        categoriTable.dataSource = self
+        categoriTable.delegate = self
+        
     }
 
 
-}
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return DataService.instance.getCategories().count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+       if let cell = tableView.dequeueReusableCell(withIdentifier: "CetegoriCell") as? CategoriCell {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        cell.updateCatefori(categori: category)
+        return cell
+        
+       } else {
+        
+        return CategoriCell()
+        
+        }
+        
+    }
+    
+    
+}// End Of The Class
+
 

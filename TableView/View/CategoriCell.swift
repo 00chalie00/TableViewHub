@@ -14,15 +14,11 @@ class CategoriCell: UITableViewCell {
     @IBOutlet weak var categoriTitle: UILabel!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func updateCatefori(categori: Category) {
+        
+        categoriImage.image = UIImage(named: categori.categoryImage)
+        categoriTitle.text = categori.categoryTitle
+        
     }
 
 }
