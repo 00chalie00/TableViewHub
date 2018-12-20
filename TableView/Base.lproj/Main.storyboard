@@ -25,7 +25,6 @@
                                 <rect key="frame" x="20" y="30" width="165" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="enh-BV-KLo"/>
-                                    <constraint firstAttribute="width" constant="165" id="fbt-e2-Ruu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -42,25 +41,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="143.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-3b-eht">
-                                                    <rect key="frame" x="89" y="56" width="236" height="32"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="32" id="C9N-oh-lqH"/>
-                                                        <constraint firstAttribute="width" constant="236" id="lix-Lr-BCq"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="NJU-RG-ldv">
                                                     <rect key="frame" x="0.0" y="3" width="414" height="137.66666666666666"/>
                                                 </imageView>
+                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-3b-eht">
+                                                    <rect key="frame" x="107" y="56" width="200" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="C9N-oh-lqH"/>
+                                                        <constraint firstAttribute="width" constant="200" id="sge-Iy-hNi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="NJU-RG-ldv" firstAttribute="top" secondItem="nCJ-QU-XVa" secondAttribute="top" constant="3" id="2l6-4R-YGW"/>
                                                 <constraint firstItem="NJU-RG-ldv" firstAttribute="leading" secondItem="nCJ-QU-XVa" secondAttribute="leading" id="PH7-y7-G0T"/>
-                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerY" secondItem="nCJ-QU-XVa" secondAttribute="centerY" id="Z5U-dQ-5Eo"/>
-                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerX" secondItem="nCJ-QU-XVa" secondAttribute="centerX" id="g0F-lL-9fK"/>
+                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerY" secondItem="nCJ-QU-XVa" secondAttribute="centerY" id="QM2-dd-osg"/>
+                                                <constraint firstItem="GOv-3b-eht" firstAttribute="centerX" secondItem="nCJ-QU-XVa" secondAttribute="centerX" id="dGV-5B-fEL"/>
                                                 <constraint firstItem="NJU-RG-ldv" firstAttribute="trailing" secondItem="nCJ-QU-XVa" secondAttribute="trailing" id="nqu-NP-F7T"/>
                                                 <constraint firstAttribute="bottom" secondItem="NJU-RG-ldv" secondAttribute="bottom" constant="3" id="pJ7-1v-Z5N"/>
                                             </constraints>
