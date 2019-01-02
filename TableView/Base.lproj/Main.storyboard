@@ -13,7 +13,7 @@
         <!--CODER SWAG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoryVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,8 +63,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryCellImage" destination="KFN-ZJ-PM5" id="c1I-vm-3KA"/>
-                                            <outlet property="categoryCellLabel" destination="irJ-RN-cjQ" id="id5-I8-EcW"/>
+                                            <outlet property="categoryCellImage" destination="KFN-ZJ-PM5" id="9lX-lX-Gym"/>
+                                            <outlet property="categoryCellTitle" destination="irJ-RN-cjQ" id="Eq3-oT-eVF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -88,8 +88,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="jkh-w0-zlU"/>
                     <connections>
-                        <outlet property="categoryTable" destination="atS-vz-Tga" id="he4-n3-dD3"/>
-                        <segue destination="5rM-qD-fwC" kind="show" identifier="gotoProduct" id="Dlc-QR-ISm"/>
+                        <outlet property="categoryTableView" destination="atS-vz-Tga" id="iaG-tl-eKd"/>
+                        <segue destination="5rM-qD-fwC" kind="show" identifier="gotoProduct" id="nyt-1F-HhU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -190,9 +190,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hvM-7m-Q9b"/>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="Jgf-lH-xpy" id="E1N-O6-VZb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtW-kO-tbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
