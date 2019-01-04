@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wCu-pK-PVg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FNR-xc-YYR">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,14 +63,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryCellImage" destination="KFN-ZJ-PM5" id="c1I-vm-3KA"/>
-                                            <outlet property="categoryCellLabel" destination="irJ-RN-cjQ" id="id5-I8-EcW"/>
+                                            <outlet property="categoryImage" destination="KFN-ZJ-PM5" id="vs5-VW-5wK"/>
+                                            <outlet property="categoryTitle" destination="irJ-RN-cjQ" id="11a-4w-mxj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="m1v-jf-cp1"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vYv-Qk-ehj"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0Yw-CG-Em6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gbw-Fo-mBk"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -88,13 +88,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="jkh-w0-zlU"/>
                     <connections>
-                        <outlet property="categoryTable" destination="atS-vz-Tga" id="he4-n3-dD3"/>
-                        <segue destination="5rM-qD-fwC" kind="show" identifier="gotoProduct" id="Dlc-QR-ISm"/>
+                        <outlet property="categoryTable" destination="atS-vz-Tga" id="ZmB-2L-vtc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117.3913043478262" y="26.086956521739133"/>
+            <point key="canvasLocation" x="1893" y="26"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TaA-eC-GvL">
@@ -105,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-lH-xpy">
-                                <rect key="frame" x="0.0" y="114" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="70" width="414" height="666"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0hj-Ip-7S4">
                                     <size key="itemSize" width="196" height="292"/>
@@ -158,16 +157,11 @@
                                             <constraint firstItem="0Vp-Jf-aDM" firstAttribute="leading" secondItem="MCf-o0-L4X" secondAttribute="leadingMargin" constant="1" id="e5O-yU-4Rx"/>
                                             <constraint firstItem="o4s-i4-Btp" firstAttribute="top" secondItem="MCf-o0-L4X" secondAttribute="topMargin" constant="1" id="eV3-0e-jMG"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="productCellImage" destination="o4s-i4-Btp" id="I3Q-Vy-KNL"/>
-                                            <outlet property="productCellPrice" destination="0Vp-Jf-aDM" id="Kzs-UQ-Sx5"/>
-                                            <outlet property="productCellTitle" destination="uAa-hS-NwZ" id="SDH-Qq-KDD"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3r-Rr-VQr">
-                                <rect key="frame" x="20" y="74" width="170" height="30"/>
+                                <rect key="frame" x="20" y="30" width="170" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Prq-Uc-z4j"/>
                                     <constraint firstAttribute="width" constant="170" id="bjr-f6-j2T"/>
@@ -196,29 +190,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtW-kO-tbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.913043478261" y="26.90217391304348"/>
+            <point key="canvasLocation" x="2781.1594202898555" y="26.90217391304348"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="y0D-jx-8wH">
+        <scene sceneID="IbJ-oe-eQW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wCu-pK-PVg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FNR-xc-YYR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Po-8l-ovX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="blO-sV-3aO">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jS7-2p-krH"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9bB-BC-b06"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yUe-tR-ChL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aW6-a4-MY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="27"/>
+            <point key="canvasLocation" x="1117.3913043478262" y="26.086956521739133"/>
         </scene>
     </scenes>
     <resources>
