@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1117.3913043478262" y="26.086956521739133"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductVC-->
         <scene sceneID="TaA-eC-GvL">
             <objects>
-                <viewController id="5rM-qD-fwC" sceneMemberID="viewController">
+                <viewController id="5rM-qD-fwC" customClass="ProductVC" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YJi-G2-CtK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,9 +159,9 @@
                                             <constraint firstItem="o4s-i4-Btp" firstAttribute="top" secondItem="MCf-o0-L4X" secondAttribute="topMargin" constant="1" id="eV3-0e-jMG"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="productCellImage" destination="o4s-i4-Btp" id="I3Q-Vy-KNL"/>
-                                            <outlet property="productCellPrice" destination="0Vp-Jf-aDM" id="Kzs-UQ-Sx5"/>
-                                            <outlet property="productCellTitle" destination="uAa-hS-NwZ" id="SDH-Qq-KDD"/>
+                                            <outlet property="productCellImage" destination="o4s-i4-Btp" id="9Jb-y0-3GY"/>
+                                            <outlet property="productCellPrice" destination="0Vp-Jf-aDM" id="Ml9-9u-q73"/>
+                                            <outlet property="productCellTitle" destination="uAa-hS-NwZ" id="0V6-tR-w41"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -190,6 +190,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hvM-7m-Q9b"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionCell" destination="Jgf-lH-xpy" id="PZS-2V-9ad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtW-kO-tbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

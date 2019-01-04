@@ -44,5 +44,23 @@ class CategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+       let productList = ServerData.serverDataIns.getCategory()[indexPath.row]
+        
+        performSegue(withIdentifier: "gotoProduct", sender: productList)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let productSegueVC = segue.destination as? ProductVC {
+            
+            productSegueVC.iniProductItem(item: sender as! CategoryDataStr)
+            
+        }
+        
+    }
+    
     
 }// End Of The Class

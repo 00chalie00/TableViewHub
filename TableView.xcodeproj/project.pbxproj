@@ -11,6 +11,9 @@
 		2128653221DCA26A006A9072 /* CategoryDataStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653121DCA26A006A9072 /* CategoryDataStr.swift */; };
 		2128653421DCA389006A9072 /* ServerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653321DCA389006A9072 /* ServerData.swift */; };
 		2128653621DCA7B8006A9072 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653521DCA7B8006A9072 /* CategoryCell.swift */; };
+		2128653A21DD9FEE006A9072 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653921DD9FEE006A9072 /* ProductVC.swift */; };
+		2128653C21DDA16C006A9072 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653B21DDA16C006A9072 /* ProductCell.swift */; };
+		2128653E21DDA780006A9072 /* ProductDataStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128653D21DDA780006A9072 /* ProductDataStr.swift */; };
 		2148900621C8BCD00068FBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2148900521C8BCD00068FBCC /* AppDelegate.swift */; };
 		2148900B21C8BCD00068FBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2148900921C8BCD00068FBCC /* Main.storyboard */; };
 		2148900D21C8BCD10068FBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2148900C21C8BCD10068FBCC /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		2128653121DCA26A006A9072 /* CategoryDataStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataStr.swift; sourceTree = "<group>"; };
 		2128653321DCA389006A9072 /* ServerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerData.swift; sourceTree = "<group>"; };
 		2128653521DCA7B8006A9072 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2128653921DD9FEE006A9072 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		2128653B21DDA16C006A9072 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		2128653D21DDA780006A9072 /* ProductDataStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataStr.swift; sourceTree = "<group>"; };
 		2148900221C8BCD00068FBCC /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2148900521C8BCD00068FBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2148900A21C8BCD00068FBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2128652F21DCA120006A9072 /* CategoryVC.swift */,
+				2128653921DD9FEE006A9072 /* ProductVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2128653521DCA7B8006A9072 /* CategoryCell.swift */,
+				2128653B21DDA16C006A9072 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2128653121DCA26A006A9072 /* CategoryDataStr.swift */,
+				2128653D21DDA780006A9072 /* ProductDataStr.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,10 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2128653A21DD9FEE006A9072 /* ProductVC.swift in Sources */,
 				2128653421DCA389006A9072 /* ServerData.swift in Sources */,
 				2128653021DCA120006A9072 /* CategoryVC.swift in Sources */,
+				2128653E21DDA780006A9072 /* ProductDataStr.swift in Sources */,
 				2148900621C8BCD00068FBCC /* AppDelegate.swift in Sources */,
 				2128653221DCA26A006A9072 /* CategoryDataStr.swift in Sources */,
+				2128653C21DDA16C006A9072 /* ProductCell.swift in Sources */,
 				2128653621DCA7B8006A9072 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
